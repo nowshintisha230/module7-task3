@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color:blue;
+            text-decoration: underline;
+            text-align: center;
+        }
+        /*laptop*/
+        @media screen and (max-width:1920px) {
+        img{
+            width:1920px;
+            height:650px ;
+        }
+    }
+    /*phone*/
+        @media screen and (max-width:576px) {
+             img{
+                width:500px;
+            height:600px ;
+            object-fit: cover;
+            object-position:center ;
+        }
+    }
+    /*tab*/
+      @media screen and (max-width:1024px) and (min-width:569px) {
+             img{
+                width:700px;
+            height:500px ;
+            object-fit: cover;
+            object-position:center ;
+        }
+    }
+     /*pc*/
+      @media screen and (max-width:2600px) and  {
+             img{
+                width:1350px;
+            height:1100px ;
+            object-fit: cover;
+            object-position:center ;
+        }
+    }
+    </style>
+</head>
+<body>
+    <h1>Adapt images for different devices</h1>
+    <img src="/boat.jpg" alt="boat">
+</body>
+</html>
